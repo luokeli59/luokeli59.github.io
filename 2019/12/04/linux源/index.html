@@ -293,20 +293,20 @@
     
     <nav id="title-list-nav">
         
-        <a  class="linux基础 "
-           href="/2019/12/04/linux%E6%BA%90/"
-           data-tag="源"
-           data-author="" >
-            <span class="post-title" title="linux-源">linux-源</span>
-            <span class="post-date" title="2019-12-04 14:49:00">2019/12/04</span>
-        </a>
-        
         <a  class=""
            href="/2019/12/04/hello-world/"
            data-tag=""
            data-author="" >
             <span class="post-title" title="Hello World">Hello World</span>
             <span class="post-date" title="2019-12-04 17:10:30">2019/12/04</span>
+        </a>
+        
+        <a  class="linux基础 "
+           href="/2019/12/04/linux%E6%BA%90/"
+           data-tag="源"
+           data-author="" >
+            <span class="post-title" title="linux-源">linux-源</span>
+            <span class="post-date" title="2019-12-04 14:49:00">2019/12/04</span>
         </a>
         
         <a  class="test "
@@ -361,7 +361,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-04 23:07:31'>2019-12-04 14:49</time>
+        创建时间:<time class="date" title='更新时间: 2019-12-04 23:10:52'>2019-12-04 14:49</time>
         
     </div>
     <div class="article-meta">
@@ -383,7 +383,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-6"><a class="toc-link" href="#centos7-网络阿里源"><span class="toc-text">centos7 网络阿里源</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#ubuntu16-04-网络阿里源"><span class="toc-text">ubuntu16.04 网络阿里源</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#安装docker源"><span class="toc-text">安装docker源</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#docker仓库-源"><span class="toc-text">docker仓库 源</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#docker-compose"><span class="toc-text">docker-compose</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#pip-源"><span class="toc-text">pip 源</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#npm-163源"><span class="toc-text">npm 163源</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#centos7-网络阿里源"><span class="toc-text">centos7 网络阿里源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ubuntu16-04-网络阿里源"><span class="toc-text">ubuntu16.04 网络阿里源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装docker源"><span class="toc-text">安装docker源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker仓库-源"><span class="toc-text">docker仓库 源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-compose"><span class="toc-text">docker-compose</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pip-源"><span class="toc-text">pip 源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#npm-163源"><span class="toc-text">npm 163源</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -399,14 +399,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h6 id="centos7-网络阿里源"><a href="#centos7-网络阿里源" class="headerlink" title="centos7 网络阿里源"></a>centos7 网络阿里源</h6><pre><code>
+        <h3 id="centos7-网络阿里源"><a href="#centos7-网络阿里源" class="headerlink" title="centos7 网络阿里源"></a>centos7 网络阿里源</h3><pre><code>
 curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 curl -o /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/centos/docker-ce.repo 
 curl -o /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo
 yum clean all && yum makecache fast
 </code></pre>
 
-<h6 id="ubuntu16-04-网络阿里源"><a href="#ubuntu16-04-网络阿里源" class="headerlink" title="ubuntu16.04 网络阿里源"></a>ubuntu16.04 网络阿里源</h6><pre><code>
+<h3 id="ubuntu16-04-网络阿里源"><a href="#ubuntu16-04-网络阿里源" class="headerlink" title="ubuntu16.04 网络阿里源"></a>ubuntu16.04 网络阿里源</h3><pre><code>
 deb http://mirrors.aliyun.com/ubuntu/ xenial main
 deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main
 deb http://mirrors.aliyun.com/ubuntu/ xenial universe
@@ -415,13 +415,13 @@ deb http://mirrors.aliyun.com/ubuntu/ xenial-security main
 deb http://mirrors.aliyun.com/ubuntu/ xenial-security universe
 </code></pre>
 
-<h6 id="安装docker源"><a href="#安装docker源" class="headerlink" title="安装docker源"></a>安装docker源</h6><pre><code>
+<h3 id="安装docker源"><a href="#安装docker源" class="headerlink" title="安装docker源"></a>安装docker源</h3><pre><code>
 curl -o /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/centos/docker-ce.repo
 yum list docker-ce --showduplicates| sort -r
 yum -y install docker-ce-18.06.3.ce-3.el7
 </code></pre>
 
-<h6 id="docker仓库-源"><a href="#docker仓库-源" class="headerlink" title="docker仓库 源"></a>docker仓库 源</h6><pre><code>
+<h3 id="docker仓库-源"><a href="#docker仓库-源" class="headerlink" title="docker仓库 源"></a>docker仓库 源</h3><pre><code>
 cat /etc/docker/daemon.json
 {
   "registry-mirrors": 
@@ -433,12 +433,12 @@ cat /etc/docker/daemon.json
 }
 </code></pre>
 
-<h6 id="docker-compose"><a href="#docker-compose" class="headerlink" title="docker-compose"></a>docker-compose</h6><pre><code>
+<h3 id="docker-compose"><a href="#docker-compose" class="headerlink" title="docker-compose"></a>docker-compose</h3><pre><code>
 curl -L https://github.com/docker/compose/releases/download/1.24.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 </code></pre>
 
-<h6 id="pip-源"><a href="#pip-源" class="headerlink" title="pip 源"></a>pip 源</h6><pre><code>
+<h3 id="pip-源"><a href="#pip-源" class="headerlink" title="pip 源"></a>pip 源</h3><pre><code>
 vim ~/.pip/pip.conf
 [global]
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
@@ -446,10 +446,9 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 trusted-host = https://pypi.tuna.tsinghua.edu.cn
 </code></pre>
 
-<h6 id="npm-163源"><a href="#npm-163源" class="headerlink" title="npm 163源"></a>npm 163源</h6><pre><code>
+<h3 id="npm-163源"><a href="#npm-163源" class="headerlink" title="npm 163源"></a>npm 163源</h3><pre><code>
 npm config set registry https://registry.npm.taobao.org
 </code></pre>
-
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
     </div>
@@ -466,7 +465,7 @@ npm config set registry https://registry.npm.taobao.org
     
     <p><span class="copy-title">本文作者:</span><a  title="LuoKeLi">LuoKeLi</a></p>
     <p><span class="copy-title">发布时间:</span>2019-12-04, 14:49:00</p>
-    <p><span class="copy-title">最后更新:</span>2019-12-04, 23:07:31</p>
+    <p><span class="copy-title">最后更新:</span>2019-12-04, 23:10:52</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/04/linux%E6%BA%90/" title="linux-源">luokeli59.github.io/2019/12/04/linux%E6%BA%90/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
